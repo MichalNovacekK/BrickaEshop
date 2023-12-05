@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #594ae2;
+    --primary-light-color: #766aE7;
+    --primary-dark-color: #3e2cdd;
+  
+    --secondary-color: #03a9f4;
+    --secondary-light-color: #67daff;
+    --secondary-dark-color: #007ac1;
+  
+    --accent-color: #ff4081;
+    --accent-light-color: #ff79b0;
+    --accent-dark-color: #c60055;
+  
+    --background-color: #f5f5f5;
+    --surface-color: #ffffff;
+    --on-primary-color: #ffffff;
+    --on-secondary-color: #000000;
+    --on-background-color: #000000;
+    --on-surface-color: #000000;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: var(--background-color);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: var(--on-background-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover:not(:first-child) {
+    background-color: var(--primary-light-color);
+    color: var(--surface-color);
+  }
+  
+  .topnav a.active {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+  
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+  
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    background-color: var(--primary-light-color);
+  }
